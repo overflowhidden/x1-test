@@ -1,0 +1,6 @@
+{
+  "name": "project",
+  "devDependencies": {
+    "gulp-sass": "^2.1.0"
+  }
+}

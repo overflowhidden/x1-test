@@ -1,0 +1,54 @@
+
+@import "bootstrap/_variables";
+body{
+	padding: 40px;
+}
+.aside{
+	height: 400px; 
+	
+}
+.content{ 
+	height: 600px;
+}
+.frame{
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		top:5px;
+		width: 100%;
+		max-width: 360px;
+		left: 0;
+		bottom: 0;
+		background:$dark-grey; 
+		z-index: -1;
+	}
+}
+.main{
+	position: relative;
+	z-index: 1;
+	padding: 0 20px 40px 0;
+	&:after{
+		content: "";
+		position: absolute;
+		top: 20px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background:$base-blue; 
+		z-index: -1;
+	}
+	.main-holder{
+		margin: -10px 0 0 -10px;
+		background: red;
+		padding: 40px;
+		position: relative;
+		z-index: 2;
+	}
+}
+.footer{
+	position: relative;
+	.footer-holder{
+		
+	}
+}
